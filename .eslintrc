@@ -1,0 +1,138 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "plugin:react/recommended",
+        "react-app",
+        "prettier",
+        "prettier/react",
+        "plugin:prettier/recommended"
+    ],
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        "react/jsx-filename-extension": [
+            "warn",
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "no-underscore-dangle": [
+            "off"
+        ],
+        "camelcase": [
+            "off"
+        ],
+        "no-shadow": [
+            "off"
+        ],
+        "no-use-before-define": [
+            "error",
+            {
+                "variables": false
+            }
+        ],
+        "block-spacing": [
+            "warn"
+        ],
+        "comma-dangle": ["error", "never"],
+        "react/prop-types": [
+            "off",
+            { "ignore": "ignore", "customValidators": "customValidator" }
+          ],
+          "eqeqeq": "off",
+        "comma-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "lines-between-class-members": [
+            "warn",
+            "always"
+        ],
+        "no-debugger": [
+            "error"
+        ],
+        "padding-line-between-statements": [
+            "warn",
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "function"
+            },
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "multiline-expression"
+            },
+            {
+                "blankLine": "always",
+                "prev": "const",
+                "next": "multiline-block-like"
+            },
+            {
+                "blankLine": "always",
+                "prev": "let",
+                "next": "multiline-block-like"
+            },
+            {
+                "blankLine": "always",
+                "prev": "var",
+                "next": "multiline-block-like"
+            },
+            {
+                "blankLine": "always",
+                "prev": "const",
+                "next": "return"
+            },
+            {
+                "blankLine": "always",
+                "prev": "let",
+                "next": "return"
+            },
+            {
+                "blankLine": "always",
+                "prev": "var",
+                "next": "return"
+            },
+            {
+                "blankLine": "always",
+                "prev": "class",
+                "next": "*"
+            },
+            {
+                "blankLine": "always",
+                "prev": "multiline-block-like",
+                "next": "*"
+            }
+        ],
+        "react/jsx-uses-vars": 1,
+        "no-const-assign": "warn",
+        "no-this-before-super": "warn",
+        "no-undef": "warn",
+        "no-unreachable": "warn",
+        "no-unused-vars": "warn",
+        "constructor-super": "warn",
+        "valid-typeof": "warn"
+    },
+    "plugins": [
+        "babel",
+        "jsx-a11y",
+        "react"
+    ]
+}

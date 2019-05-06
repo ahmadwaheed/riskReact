@@ -1,0 +1,27 @@
+.back-arrow{
+    background-color: #fff;
+    padding: 7px 15px;
+    border-radius: 6px 6px 0 0;
+    display: inline-block;
+    margin-bottom: -3px;
+    margin-right: 7px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+}
+
+
+
+.invisible {
+    visibility: hidden;
+}
+
+.fix-height-table-swap-funder.fix-height-table{
+    max-height: calc(100vh - 240px);
+}
+
+@media(min-width:768px){
+    .back-arrow{ 
+        bottom: -11px;
+    }
+}
